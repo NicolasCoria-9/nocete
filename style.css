@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(210, 205, 205);
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+}
+.logo img{
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+    border-radius: 30%;
+}
+.logtext h2{
+    display: flex;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: left;
+    color: green;
+}
+.logtext p {
+    display: flex;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.centered-content {
+    padding: 5px;
+    border-radius: 30%; /* Esquinas redondeadas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header ul li{
+    list-style: none;
+}
+.nav li a{
+    background-color: rgb(210, 205, 205);
+    color: green;
+    text-decoration: none;
+    padding: 30px 15px;
+    display: block;
+}
+.nav li a:hover {
+    background-color: #434343;
+    color: rgb(0, 0, 0);
+}
+.nav>li{
+    float:left;
+}
+.nav li ul{
+    display:none;
+    position:absolute;
+    min-width: 200px;
+    z-index: 1000;
+}
+.nav li:hover>ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul{
+    right: -155px;
+    top: 0px;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Estilos para móviles */
+@media (max-width: 992px) {
+    .dropdown-menu .dropdown-submenu .dropdown-menu {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none; /* Ocultar submenús inicialmente en móvil */
+    }
+    .dropdown-submenu .dropdown-toggle::after {
+        transform: rotate(-90deg); /* Flecha hacia la derecha en móvil */
+        position: relative;
+    }
+    .dropdown-submenu.show .dropdown-menu {
+        display: block; /* Mostrar submenú cuando esté activo en móvil */
+        position: relative;
+    }
+}
+
+
+.leyenda{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: rgb(236, 236, 236);
+}
+.noticia{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.noticia h3{
+    color: rgb(56, 131, 106);
+    font-family: "Lora", serif;
+}
+.noticia button{
+    width: 120px;
+    height: 50px;
+    color: azure;
+    font-family: "Lora", serif;
+    background-color: rgb(56, 131, 106);
+    border-radius: 40%;
+    border-color: rgb(56, 131, 106);
+    justify-content: center;
+    align-items: center;
+}
+.noticia button:hover{
+    background-color: #434343;
+}
+#contenido{
+    font-size: 18px;
+    color: black;
+    font-family: "Lora", serif;
+}
+#contenido2{
+    font-size: 18px;
+    color: black;
+    font-family: "Lora", serif;
+}
+#contenido3{
+    font-size: 18px;
+    color: black;
+}
+
+
+.marcas {
+    background-color: rgb(210, 205, 205);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.marcas h2{
+    margin: 25px 0px 45px 0px;
+    color: green;
+    
+}
+.marcasimg{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0px 0px 65px 0px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.carousel-inner img {
+    width: auto; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Fija la altura a 200px (puedes ajustar esta altura según tus necesidades) */
+    
+    object-fit: cover; /* Cubre todo el área sin deformar la proporción */
+}
+
+
+
+#nosotros{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#nosotros iframe{
+    padding: 15px;
+    margin: 5px;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: rgb(236, 236, 236);
+    border-radius: 25%;
+}
+
+
+.redes {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    flex-direction: column;
+}
+.redes img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+    border-radius: 30%;
+}
+.redes p {
+    display: flex;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.red1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.red2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.red3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+}
+.text3{
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 10px 10px 10px 0px;
+    font-size: auto; /* Ajusta el tamaño de la fuente para el texto de "SEGUINOS EN INSTAGRAM" */
+}
+
+.redes2 {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+}
+.redes2 img {
+    width: 130px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+    border-radius: 30%;
+}
+.redes2 p {
+    display: flex;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.ubi{
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: start;
+    flex-direction: row;
+}
+.ubi img{
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+}
+.ubi p{
+    display: flex;
+    flex-direction: column;
+}
+
+.hor{
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: start;
+    flex-direction: row;
+}
+.hor img{
+    display: flex;
+    width: 40px;
+    flex-direction: column; 
+}
+.ubi p{
+    display: flex;
+    flex-direction: column;
+}
+
+.tel{
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: start;
+    flex-direction: row;
+}
+.tel img{
+    display: flex;
+    width: 40px;
+    flex-direction: column; 
+}
+.tel p{
+    display: flex;
+    flex-direction: column;
+}
+
+.wsp{
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: start;
+    flex-direction: row;
+}
+.wsp img{
+    display: flex;
+    width: 40px;
+    flex-direction: column; 
+}
+.wsp p{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-float:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #28a745;
+    text-decoration: underline;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
