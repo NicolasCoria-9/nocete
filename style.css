@@ -112,14 +112,12 @@ header ul li{
     margin-top: 0;
 }
 
-/* Evita el retraso en la visualización del dropdown */
+/* Evitar el retraso en la visualización del dropdown */
 .dropdown-menu {
     transition: opacity 0.3s ease;
     opacity: 0;
     display: block;
     visibility: hidden;
-    background-color: #434343;
-    color: rgb(0, 0, 0);
 }
 
 .navbar-nav .dropdown:hover .dropdown-menu {
@@ -136,9 +134,21 @@ header ul li{
 .dropdown.no-arrow .nav-link:after {
     content: none; /* Remover la flecha del botón */
 }
-.dropdown-menu li a{
-    color: green;
+
+/* Cambiar el color de fondo del submenú a negro y las palabras a verde */
+.dropdown-menu {
+    background-color: #000; /* Fondo negro */
 }
+
+.dropdown-item {
+    color: #28a745; /* Texto verde */
+}
+
+.dropdown-item:hover {
+    background-color: #333; /* Fondo más oscuro en hover */
+    color: #28a745; /* Mantener el texto verde en hover */
+}
+
 
 
 .leyenda{
