@@ -106,6 +106,49 @@ header ul li{
         position: relative;
     }
 }
+ /* Para que el dropdown se abra al pasar el mouse */
+ .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Evitar el retraso en la visualización del dropdown */
+.dropdown-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Remover la flecha del dropdown (dropdown-toggle) */
+.dropdown.no-arrow .nav-link {
+    display: inline;
+}
+
+/* Mantener el mismo estilo de los otros links en el menú */
+.dropdown.no-arrow .nav-link:after {
+    content: none; /* Remover la flecha del botón */
+}
+
+/* Cambiar el color de fondo del submenú a negro y las palabras a verde */
+.dropdown-menu {
+    background-color: #000; /* Fondo negro */
+}
+
+.dropdown-item {
+    color: #28a745; /* Texto verde */
+}
+
+.dropdown-item:hover {
+    background-color: #333; /* Fondo más oscuro en hover */
+    color: #28a745; /* Mantener el texto verde en hover */
+}
+
 
 
 .leyenda{

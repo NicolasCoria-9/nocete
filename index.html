@@ -29,8 +29,6 @@
                 <!-- Agregar logo de la marca o título -->
                 <a class="navbar-brand" href="./index.html">
                     <img src="./Imagenes/LOGO2.jpeg" alt="Logo" class="d-inline-block align-text-top" style="height: 40px;">
-                    <!-- O usar un título en lugar de logo -->
-                    <!-- <span class="text-success">Mi Empresa</span> -->
                 </a>
                 
                 <!-- Botón de colapso para dispositivos móviles -->
@@ -47,11 +45,18 @@
                                 <h5 class="text-success">Inicio</h5>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productos">
+        
+                        <!-- Submenú para Productos sin flecha -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link" href="./productos" id="navbarDropdown" role="button">
                                 <h5 class="text-success">Productos</h5>
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./productos">Todos los Productos</a></li>
+                                <li><a class="dropdown-item" href="./productos/guerrero">Guerrero</a></li>
+                            </ul>
                         </li>
+        
                         <li class="nav-item">
                             <a class="nav-link" href="./empresa">
                                 <h5 class="text-success">Empresa</h5>
@@ -104,7 +109,7 @@
 
         <div class="row leyenda mt-3 ">
             <div class="col-md-3 noticia justify-content-center align-items-center text-center text-success flex-wrap">
-                <img src="./Imagenes/Resumenes/Historia.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 10%;" alt="Historia">
+                <img src="./Imagenes/Resumenes/Historia.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 30%;" alt="Historia">
                 <h3>Historia</h3>
                 <div id="contenido">
                     <p>Desde hace más de 65 años somos una empresa radicada en Rafaela, Santa Fe. Dedicandonos principalmente a la venta de motocicletas, ofreciendo una amplia gama de productos. </p>
@@ -113,7 +118,7 @@
             </div>
 
             <div class="col-md-3 noticia justify-content-center align-items-center text-center text-success flex-wrap ">
-                <img src="./Imagenes/Resumenes/Capacidad.jpg" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 10%;" alt="Capacidad">
+                <img src="./Imagenes/Resumenes/Capacidad.jpg" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 30%;" alt="Capacidad">
                 <h3>Capacidad</h3>
                 <div id="contenido2">
                     <p>Con más de 400 personas capacitadas y más de 15.000 m² de modernas instalaciones...</p>
@@ -122,7 +127,7 @@
             </div>
 
             <div class="col-md-3 noticia justify-content-center align-items-center text-center text-success flex-wrap ">
-                <img src="./Imagenes/Resumenes/Calidad.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 10%;" alt="Calidad">
+                <img src="./Imagenes/Resumenes/Calidad.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 30%;" alt="Calidad">
                 <h3>Calidad</h3>
                 <div id="contenido3">
                     <p>Nos destacamos por nuestra excelente atención al cliente y una calificación alta en cuanto a satisfacción de ellos, quienes valoran tanto el trato como las opciones de pago flexibles. .</p>
@@ -131,7 +136,7 @@
             </div>
 
             <div class="col-md-3 noticia justify-content-center align-items-center text-center text-success flex-wrap ">
-                <img src="./Imagenes/Resumenes/Presupuesto.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 10%;" alt="Historia">
+                <img src="./Imagenes/Resumenes/Presupuesto.png" class="img-fluid" style="height: 100px; object-fit: contain; border-radius: 30%;" alt="Historia">
                 <h3>Presupuestos</h3>
                 <div id="contenido4">
                     <p>Te acompañamos por nuestro canal de WhatsApp en el proceso de compra</p>
