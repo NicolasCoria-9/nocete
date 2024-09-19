@@ -12,3 +12,12 @@ function muestra_ocultar(id){
     }
 }
 
+
+const productosLink = document.getElementById('productosLink');
+    const productosMenu = document.getElementById('productosMenu');
+
+    productosLink.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevenir la redirección
+        productosMenu.style.display = productosMenu.style.display === 'block' ? 'none' : 'block';
+    });
+

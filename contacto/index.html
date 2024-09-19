@@ -27,10 +27,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
             <div class="container-fluid">
                 <!-- Agregar logo de la marca o título -->
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="./index.html">
                     <img src="../Imagenes/LOGO2.jpeg" alt="Logo" class="d-inline-block align-text-top" style="height: 40px;">
-                    <!-- O usar un título en lugar de logo -->
-                    <!-- <span class="text-success">Mi Empresa</span> -->
                 </a>
                 
                 <!-- Botón de colapso para dispositivos móviles -->
@@ -47,13 +45,20 @@
                                 <h5 class="text-success">Inicio</h5>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../productos">
+        
+                <!-- Submenú para Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-success" href="#" id="productosLink">
                                 <h5 class="text-success">Productos</h5>
                             </a>
+                        <ul class="dropdown-menu bg-dark" id="productosMenu">
+                            <li><a class="dropdown-item text-success" href="../productos">Todos los Productos</a></li>
+                            <li><a class="dropdown-item text-success" href="../productos/guerrero">Guerrero</a></li>
+                        </ul>
                         </li>
+        
                         <li class="nav-item">
-                            <a class="nav-link" href="../empresa/">
+                            <a class="nav-link" href="../empresa">
                                 <h5 class="text-success">Empresa</h5>
                             </a>
                         </li>
