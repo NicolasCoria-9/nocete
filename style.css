@@ -118,6 +118,8 @@ header ul li{
     opacity: 0;
     display: block;
     visibility: hidden;
+    background-color: #434343;
+    color: rgb(0, 0, 0);
 }
 
 .navbar-nav .dropdown:hover .dropdown-menu {
@@ -133,6 +135,9 @@ header ul li{
 /* Mantener el mismo estilo de los otros links en el menú */
 .dropdown.no-arrow .nav-link:after {
     content: none; /* Remover la flecha del botón */
+}
+.dropdown-menu li a{
+    color: green;
 }
 
 
