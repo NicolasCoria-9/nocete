@@ -106,6 +106,21 @@ header ul li{
         position: relative;
     }
 }
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Ajuste para que se muestre correctamente */
+}
+/* Evita el retraso en la visualización del dropdown */
+.dropdown-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 .leyenda{
