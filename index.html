@@ -13,75 +13,71 @@
 
     <div class="container-fluid">
     
-        <header class="container-fluid bg-light ">
-            <div class="logo bg-light">
-                <img src="./Imagenes/LOGO2.jpeg" alt="Nocete SRL" class="img-fluid">
-                <div class="logtext">
-                <h2>Nocete srl</h2>
-                <p>Hace 64 años que nos encargamos de poner a Rafaela y zona sobre ruedas…</p>
+        <header class="container-fluid bg-light">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo d-flex align-items-center">
+                    <img src="./Imagenes/LOGO2.jpeg" alt="Nocete SRL" class="img-fluid" style="max-height: 80px;">
+                    <div class="logtext ms-3">
+                        <h2 class="mb-0">Nocete SRL</h2>
+                        <p class="mb-0">Hace 64 años que nos encargamos de poner a Rafaela y zona sobre ruedas…</p>
+                    </div>
                 </div>
             </div>
-        </header>
-
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
-            <div class="container-fluid">
-                <!-- Agregar logo de la marca o título -->
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./Imagenes/LOGO2.jpeg" alt="Logo" class="d-inline-block align-text-top" style="height: 40px;">
-                </a>
-                
-                <!-- Botón de colapso para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Menú de navegación -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Alineación del menú, centrado en pantallas grandes -->
-                    <ul class="navbar-nav mx-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">
-                                <h5 class="text-success">Inicio</h5>
-                            </a>
-                        </li>
         
-                <!-- Submenú para Productos -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-success" href="#" id="productosLink">
-                                <h5 class="text-success">Productos</h5>
-                            </a>
-                        <ul class="dropdown-menu bg-dark" id="productosMenu">
-                            <li><a class="dropdown-item text-success" href="./productos">Todos los Productos</a></li>
-                            <li><a class="dropdown-item text-success" href="./guerrero/index.html">Guerrero</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/zanella">Zanella</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/gilera">Gilera</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/keller">Keller</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/mondial">Mondial</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/voge">Voge</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/zontes">Zontes</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/tvs">TVS</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/beta">Beta</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/hero">Hero</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/honda">Honda</a></li>
-                            <li><a class="dropdown-item text-success" href="./productos/gaf">GAF</a></li>
+            <!-- Barra de navegación dentro del header -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <!-- Botón de colapso para dispositivos móviles -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Menú de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">
+                                    <h5 class="text-success">Inicio</h5>
+                                </a>
+                            </li>
+        
+                            <!-- Submenú para Productos -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-success" href="#" id="productosLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <h5 class="text-success">Productos</h5>
+                                </a>
+                                <ul class="dropdown-menu bg-dark" id="productosMenu">
+                                    <li><a class="dropdown-item text-success" href="./productos">Todos los Productos</a></li>
+                                    <li><a class="dropdown-item text-success" href="./guerrero/index.html">Guerrero</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/zanella">Zanella</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/gilera">Gilera</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/keller">Keller</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/mondial">Mondial</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/voge">Voge</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/zontes">Zontes</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/tvs">TVS</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/beta">Beta</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/hero">Hero</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/honda">Honda</a></li>
+                                    <li><a class="dropdown-item text-success" href="./productos/gaf">GAF</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="./empresa">
+                                    <h5 class="text-success">Empresa</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto">
+                                    <h5 class="text-success">Contacto</h5>
+                                </a>
+                            </li>
                         </ul>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./empresa">
-                                <h5 class="text-success">Empresa</h5>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto">
-                                <h5 class="text-success">Contacto</h5>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         
 
         <!-- Carrusel -->
