@@ -119,7 +119,6 @@ header ul li{
     opacity: 0;
     visibility: hidden;
 }
-
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -161,6 +160,7 @@ header ul li{
 .noticia button:hover{
     background-color: #434343;
 }
+
 
 .nosotros{
     background-color: white;
