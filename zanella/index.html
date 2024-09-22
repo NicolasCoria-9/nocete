@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        
+        <header class="container-fluid bg-light ">
+            <div class="logo bg-light">
+                <img src="../Imagenes/LOGO2.jpeg" alt="Nocete SRL" class="img-fluid">
+                <div class="logtext">
+                <h2>Nocete srl</h2>
+                <p>Hace 64 años que nos encargamos de poner a Rafaela y zona sobre ruedas…</p>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Barra de navegación dentro del header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Botón de colapso para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Alineación del menú, centrado en pantallas grandes -->
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">
+                                <h5 class="text-success">Inicio</h5>
+                            </a>
+                        </li>
+        
+                <!-- Submenú para Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-success" href="#" id="productosLink">
+                                <h5 class="text-success">Productos</h5>
+                            </a>
+                            <ul class="dropdown-menu bg-dark" id="productosMenu">
+                                <li><a class="dropdown-item text-success" href="../productos/index.html">Todos los Productos</a></li>
+                                <li><a class="dropdown-item text-success" href="../guerrero/index.html">Guerrero</a></li>
+                                <li><a class="dropdown-item text-success" href="#">Zanella</a></li>
+                                <li><a class="dropdown-item text-success" href="../gilera">Gilera</a></li>
+                                <li><a class="dropdown-item text-success" href="../keller">Keller</a></li>
+                                <li><a class="dropdown-item text-success" href="../mondial">Mondial</a></li>
+                                <li><a class="dropdown-item text-success" href="../voge">Voge</a></li>
+                                <li><a class="dropdown-item text-success" href="../zontes">Zontes</a></li>
+                                <li><a class="dropdown-item text-success" href="../tvs">TVS</a></li>
+                                <li><a class="dropdown-item text-success" href="../beta">Beta</a></li>
+                                <li><a class="dropdown-item text-success" href="../hero">Hero</a></li>
+                                <li><a class="dropdown-item text-success" href="../honda">Honda</a></li>
+                                <li><a class="dropdown-item text-success" href="../gaf">GAF</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../empresa/index.html">
+                                <h5 class="text-success">Empresa</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto/index.html">
+                                <h5 class="text-success">Contacto</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
