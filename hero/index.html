@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="container-fluid bg-light ">
+            <div class="logo bg-light">
+                <img src="../Imagenes/LOGO2.jpeg" alt="Nocete SRL" class="img-fluid">
+                <div class="logtext">
+                <h2>Nocete srl</h2>
+                <p>Hace 64 años que nos encargamos de poner a Rafaela y zona sobre ruedas…</p>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Barra de navegación dentro del header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Botón de colapso para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Alineación del menú, centrado en pantallas grandes -->
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">
+                                <h5 class="text-success">Inicio</h5>
+                            </a>
+                        </li>
+        
+                <!-- Submenú para Productos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-success" href="#" id="productosLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h5 class="text-success">Productos</h5>
+                    </a>
+                    <ul class="dropdown-menu bg-dark" id="productosMenu">
+                        <li><a class="dropdown-item text-success" href="../productos/index.html">Todos los Productos</a></li>
+                        <li><a class="dropdown-item text-success" href="../beta/index.html">Beta</a></li>
+                        <li><a class="dropdown-item text-success" href="../gaf/index.html">GAF</a></li>
+                        <li><a class="dropdown-item text-success" href="../gilera">Gilera</a></li>
+                        <li><a class="dropdown-item text-success" href="../guerrero/index.html">Guerrero</a></li>
+                        <li><a class="dropdown-item text-success" href="../hero/index.html">Hero</a></li>
+                        <li><a class="dropdown-item text-success" href="../honda">Honda</a></li>
+                        <li><a class="dropdown-item text-success" href="../keller">Keller</a></li>
+                        <li><a class="dropdown-item text-success" href="../mondial">Mondial</a></li>
+                        <li><a class="dropdown-item text-success" href="../tvs">TVS</a></li>
+                        <li><a class="dropdown-item text-success" href="../voge">Voge</a></li>
+                        <li><a class="dropdown-item text-success" href="../zontes">Zontes</a></li>
+                        <li><a class="dropdown-item text-success" href="../zanella/index.html">Zanella</a></li>
+                    </ul>
+                </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../empresa/index.html">
+                                <h5 class="text-success">Empresa</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto/index.html">
+                                <h5 class="text-success">Contacto</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sección de Productos de Hero -->
+        <section class="container mt-5">
+            <h1 class="text-center text-success">Productos Hero</h1>
+            <p class="text-center">Descubre nuestra selección de motos de la marca Hero. Variedad de modelos para todas las necesidades y presupuestos.</p>
+
+        <!-- Galería de Productos -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+            <!-- Carrusel dentro de la tarjeta -->
+            <div id="carouselMotoHero1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Imagenes/catalogo/hero/HUNK 190 R/Hunk_190R_Negro.png" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 1">
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carouselMotoHero1" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselMotoHero1" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            <!-- Fin del carrusel -->
+                <div class="card-body">
+                    <h5 class="card-title">Hero Hunk 190 R</h5>
+                        <p class="card-text">Ideal para quienes buscan un medio de transporte económico, ágil y de bajo mantenimiento.</p>
+                            <a href="https://api.whatsapp.com/send?phone=543492560281&text=Hola,%20soy%20( )%20te%20consulto%20por%20la%20Moto%20Hero%20Hunk%20190%20R" class="btn btn-success">Consultar por WhatsApp</a>
+                            <a href="../documentos/Ficha-tecnica-HUNK-190R.pdf" class="btn btn-danger"> Ficha Tecnica</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+            <!-- Carrusel dentro de la tarjeta -->
+            <div id="carouselMotoHero2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200 Advance/Xpulse-200_Carb_ABWR_White-360D-S01-scaled.webp" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200 Advance/motosxpilse200advancev2.jpg" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200 Advance/frenos_abs_xpulse200advance.jpg" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200 Advance/7f468437-6c88-487d-9eb4-3ea1f5e20af3.jpeg" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 4">
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carouselMotoHero2" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselMotoHero2" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            <!-- Fin del carrusel -->
+                <div class="card-body">
+                    <h5 class="card-title">Hero XPulse 200 Advance</h5>
+                        <p class="card-text">Ideal para quienes buscan un medio de transporte económico, ágil y de bajo mantenimiento.</p>
+                            <a href="https://api.whatsapp.com/send?phone=543492560281&text=Hola,%20soy%20( )%20te%20consulto%20por%20la%20Moto%20Hero%20XPulse%20200%20Advance" class="btn btn-success">Consultar por WhatsApp</a>
+                            <a href="../documentos/ARGENTINA-Xpulse-200-advance.pdf" class="btn btn-danger"> Ficha Tecnica</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+            <!-- Carrusel dentro de la tarjeta -->
+            <div id="carouselMotoHero3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200T/16.Xpulse-200T-ABWA-Panther-Black.png" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200T/Xpulse200tInfo.jpg.jpg" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/catalogo/hero/XPULSE 200T/asiento_xpulse200t-1.jpg" class="d-block w-100" style="height: 250px;" alt="Moto Zanella Ceccato 60 - Vista 3">
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carouselMotoHero3" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselMotoHero3" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            <!-- Fin del carrusel -->
+                <div class="card-body">
+                    <h5 class="card-title">Hero XPulse 200 T</h5>
+                        <p class="card-text">Ideal para quienes buscan un medio de transporte económico, ágil y de bajo mantenimiento.</p>
+                            <a href="https://api.whatsapp.com/send?phone=543492560281&text=Hola,%20soy%20( )%20te%20consulto%20por%20la%20Moto%20Hero%20XPulse%20200%20T" class="btn btn-success">Consultar por WhatsApp</a>
+                            <a href="../documentos/catalogoXpulse200TAr.pdf" class="btn btn-danger"> Ficha Tecnica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <a href="https://api.whatsapp.com/send?phone=543492560281&text=%C2%A1Hola%20Nocete!%20Soy%20(%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)%20quer%C3%ADa%20hacerte%20una%20consulta%3A%20" target="_blank" class="whatsapp-float">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    
+    </div>
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <!-- Sección de la empresa -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Nocete</h5>
+                    <p>Somos una empresa ubicada en Rafaela, provincia de Santa Fe, Argentina, que se dedica principalmente a la venta de motocicletas. Ofrecemos una amplia gama sobre este producto junto con servicios de mantenimiento y reparación.</p>
+                </div>
+    
+                <!-- Sección de enlaces rápidos -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Enlaces rápidos</h5>
+                    <p><a href="../index.html" class="text-light" style="text-decoration: none;">Inicio</a></p>
+                    <p><a href="../productos/index.html" class="text-light" style="text-decoration: none;">Productos</a></p>
+                    <p><a href="../empresa/index.html" class="text-light" style="text-decoration: none;">Empresa</a></p>
+                    <p><a href="../contacto/index.html" class="text-light" style="text-decoration: none;">Contacto</a></p>
+                </div>
+    
+                <!-- Sección de contacto -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Contacto</h5>
+                    <p><i class="fas fa-home mr-3"></i> Bv. Sta. Fe 975, S2300 Rafaela</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@glixleds.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> 03492 - 453109</p>
+                </div>
+    
+                <!-- Sección de redes sociales -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Síguenos</h5>
+                    <a href="https://www.instagram.com/nocete_srl/" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/vogerafaela/" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/nocete.films/" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Línea divisoria -->
+            <hr class="mb-4">
+    
+            <!-- Derechos de autor -->
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2024 NOCETE SRL. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <p class="text-right">Diseñado por Nicolas Coria con VSC. Rafaela, Santa Fe</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </html>
