@@ -10,32 +10,67 @@ header{
     position: relative;
     z-index: 1;
 }
+
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
+    color: #333;
 }
-h1, h2, h5 {
-    font-family: 'Lora', serif;
+
+/* Mejorar los títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c6e49; /* Verde para los títulos */
     font-weight: bold;
 }
 
+/* Ajustar el color del texto principal */
 p {
-    margin-bottom: 1.5rem;
+    color: #4a4a4a; /* Un gris más suave para el cuerpo del texto */
 }
+
+/* Espaciado adicional entre secciones */
+.section {
+    padding: 60px 0;
+}
+
+
+/* Aplicar bordes redondeados uniformes a todas las imágenes */
+img {
+    border-radius: 10px;
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en las imágenes */
+img:hover {
+    transform: scale(1.05); /* Ampliar ligeramente al pasar el ratón */
+}
+
+
+/* Estilos para los botones */
+.button {
+    background-color: #ff8c42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en botones */
+.button:hover {
+    background-color: #e67635; /* Un tono más oscuro de naranja */
+}
+
 
 .navbar-nav .nav-link:hover {
     color: #f0ad4e !important;
     border-bottom: 2px solid #f0ad4e;
     transition: all 0.3s ease;
-}
-.navbar-nav .nav-link {
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #ffffff;
 }
 .logo {
     display: flex;
@@ -76,6 +111,21 @@ p {
 
 header ul li{
     list-style: none;
+}
+nav {
+    background-color: rgba(44, 110, 73, 0.9); /* Verde semi-transparente */
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar el color de fondo cuando se hace scroll */
+nav.scrolled {
+    background-color: #2c6e49; /* Fondo sólido al hacer scroll */
+}
+
+/* Efecto hover en el menú */
+nav ul li a:hover {
+    color: #fff; /* Cambia el color al blanco al pasar el ratón */
+    transition: color 0.3s ease;
 }
 .nav li a{
     background-color: rgb(210, 205, 205);
@@ -133,6 +183,30 @@ header ul li{
         position: relative;
     }
 }
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
 /* Para que el dropdown se abra al pasar el mouse */
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;

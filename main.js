@@ -21,3 +21,9 @@ const productosLink = document.getElementById('productosLink');
         productosMenu.style.display = productosMenu.style.display === 'block' ? 'none' : 'block';
     });
 
+
+window.addEventListener("scroll", function() {
+    var nav = document.querySelector("nav");
+    nav.classList.toggle("scrolled", window.scrollY > 50);
+});
+
