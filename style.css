@@ -52,8 +52,8 @@ img:hover {
 
 /* Estilos para los botones */
 .button {
-    background-color: #ff8c42;
-    color: white;
+    background-color: rgba(44, 110, 73, 0.9);
+    color: rgba(44, 110, 73, 0.9);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -63,13 +63,13 @@ img:hover {
 
 /* Efecto hover en botones */
 .button:hover {
-    background-color: #e67635; /* Un tono más oscuro de naranja */
+    background-color: rgba(44, 110, 73, 0.9); /* Un tono más oscuro de naranja */
 }
 
 
 .navbar-nav .nav-link:hover {
-    color: #f0ad4e !important;
-    border-bottom: 2px solid #f0ad4e;
+    color: rgba(44, 110, 73, 0.9) !important;
+    border-bottom: 2px solid rgba(44, 110, 73, 0.9);
     transition: all 0.3s ease;
 }
 .logo {
@@ -172,7 +172,7 @@ img:hover {
 /* Navbar */
 .navbar-nav .nav-link {
     font-size: 18px;
-    color: rgba(44, 110, 73, 0.9); /* Color amarillo similar al que pediste */
+    color: rgba(44, 110, 73, 0.9); 
     font-weight: bold;
     text-transform: uppercase;
 }
