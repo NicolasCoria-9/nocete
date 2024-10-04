@@ -172,13 +172,13 @@ img:hover {
 /* Navbar */
 .navbar-nav .nav-link {
     font-size: 18px;
-    color: #ffc107; /* Color amarillo similar al que pediste */
+    color: rgba(44, 110, 73, 0.9); /* Color amarillo similar al que pediste */
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fff;
+    color: rgba(44, 110, 73, 0.9);
     transition: color 0.3s ease-in-out;
 }
 
@@ -187,7 +187,7 @@ img:hover {
 }
 
 .dropdown-menu a {
-    color: #ffc107;
+    color: rgba(44, 110, 73, 0.9);
 }
 
 .dropdown-menu a:hover {
