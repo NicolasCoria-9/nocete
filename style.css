@@ -193,47 +193,6 @@ nav ul li a:hover {
         position: relative;
     }
 }
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .section {
-        padding: 30px 0;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-/* Para que el dropdown se abra al pasar el mouse */
-.navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
-
-/* Hacer visible el dropdown al hacer hover */
-.dropdown-menu {
-    display: none; /* Por defecto oculto */
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-.navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
 
 
 
