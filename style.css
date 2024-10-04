@@ -108,16 +108,10 @@ img:hover {
     align-items: center;
 }
 
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Ajuste opcional si deseas ocupar toda la altura */
-}
-
 .navbar {
+    display: flex;
     align-self: flex-end; /* Alinea la barra de navegación al final */
+    justify-content: space-between;
 }
 
 .logo {
