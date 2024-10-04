@@ -116,6 +116,9 @@ img:hover {
 
 .logo {
     flex: 1; /* Ocupará el espacio disponible antes de la barra de navegación */
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 header ul li{
     list-style: none;
