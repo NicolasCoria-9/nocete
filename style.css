@@ -110,7 +110,7 @@ img:hover {
 
 .navbar {
     display: flex;
-    align-self: flex-end; /* Alinea la barra de navegación al final */
+    align-self: center; /* Alinea la barra de navegación al final */
     justify-content: space-between;
 }
 
