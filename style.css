@@ -180,6 +180,9 @@ nav ul li a:hover {
     margin-left: 0;
     margin-right: 0;
 }
+#productosLink::after {
+    display: none !important;
+}
 /* Estilos para móviles */
 @media (max-width: 992px) {
     .dropdown-menu .dropdown-submenu .dropdown-menu {
@@ -220,7 +223,6 @@ nav ul li a:hover {
         padding: 8px 16px;
     }
 }
-
 /* Para que el dropdown se abra al pasar el mouse */
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
@@ -241,6 +243,7 @@ nav ul li a:hover {
 }
 
 
+
 .noticia {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -258,8 +261,6 @@ nav ul li a:hover {
 .btn-primary:hover {
     background-color: #218838;
 }
-
-
 .leyenda{
     display: flex;
     flex-direction: row;
