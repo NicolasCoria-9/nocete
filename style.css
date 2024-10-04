@@ -109,6 +109,20 @@ img:hover {
 }
 
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ajuste opcional si deseas ocupar toda la altura */
+}
+
+.navbar {
+    align-self: flex-end; /* Alinea la barra de navegación al final */
+}
+
+.logo {
+    flex: 1; /* Ocupará el espacio disponible antes de la barra de navegación */
+}
 header ul li{
     list-style: none;
 }
