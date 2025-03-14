@@ -4,7 +4,7 @@
 header{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: rgb(236, 230, 230);
     width: 100%;
     padding: 0px;
     position: relative;
